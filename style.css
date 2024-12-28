@@ -255,6 +255,74 @@ body {
 .container{
     padding: 10px 2%;
 }
+
+/*galerie*/
+
+
+/* Section principale */
+.image-text-section {
+  padding: 40px 20px;
+  background: #151515;
+  text-align: center; /* Centre tout le contenu sous l'image-texte */
+}
+
+/* Conteneur de l'image à droite et du texte à gauche */
+.image-text-content {
+  display: flex;
+  flex-direction: row-reverse; /* Met l'image à droite */
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px; /* Espacement sous la section */
+}
+
+/* Image à droite */
+.image-container {
+  flex: 1;
+  padding-left: 20px; /* Espacement entre l'image et le texte */
+}
+
+.image-right {
+  width: 100%;
+  max-width: 400px; /* Limite la taille de l'image */
+  height: auto;
+  border-radius: 10px; /* Coins arrondis */
+}
+
+/* Conteneur du texte à gauche */
+.text-container {
+  flex: 2;
+  padding-right: 20px;
+}
+
+.text-container h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.text-container p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Galerie d'images */
+.image-gallery {
+  margin-bottom: 40px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+  justify-items: center; /* Centre les images dans la grille */
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
 /*footer*/
 
 .footer {
