@@ -124,7 +124,30 @@ body {
   .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     top: 0;
   }
-  
+  /*instagram*/
+  .instagram-button {
+    text-align: center; /* Centrer le bouton */
+    margin: 20px 0; /* Espacement autour du bouton */
+}
+
+.btn-instagram {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #212121; /* Couleur Instagram */
+    border-radius: 30px;
+    border: 2px solid #ff0000;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-instagram:hover {
+    background-color: #ff0000; /* Couleur plus foncée au survol */
+    transform: scale(1.05); /* Légère augmentation au survol */
+}
+
   /* 48em = 768px */
   
   @media (min-width: 48em) {
